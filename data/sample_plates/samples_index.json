@@ -1,0 +1,338 @@
+[
+  {
+    "filename": "plate_dc_auto_image_000021_bMXgvtud5K_3_KL35F4337.jpg",
+    "path": "data\\sample_plates\\plate_dc_auto_image_000021_bMXgvtud5K_3_KL35F4337.jpg",
+    "ground_truth": "KL35F4337",
+    "original_image": "dc_auto_image_000021_bMXgvtud5K",
+    "box": [
+      1756,
+      1682,
+      1877,
+      1726
+    ],
+    "dimensions": [
+      135,
+      48
+    ]
+  },
+  {
+    "filename": "plate_dc_auto_image_000021_bMXgvtud5K_4_KL35H5834.jpg",
+    "path": "data\\sample_plates\\plate_dc_auto_image_000021_bMXgvtud5K_4_KL35H5834.jpg",
+    "ground_truth": "KL35H5834",
+    "original_image": "dc_auto_image_000021_bMXgvtud5K",
+    "box": [
+      1944,
+      2289,
+      2357,
+      2507
+    ],
+    "dimensions": [
+      461,
+      244
+    ]
+  },
+  {
+    "filename": "plate_dc_auto_image_000024_fqvRhfiO6i_0_UP84AE9889.jpg",
+    "path": "data\\sample_plates\\plate_dc_auto_image_000024_fqvRhfiO6i_0_UP84AE9889.jpg",
+    "ground_truth": "UP84AE9889",
+    "original_image": "dc_auto_image_000024_fqvRhfiO6i",
+    "box": [
+      234,
+      1360,
+      507,
+      1488
+    ],
+    "dimensions": [
+      305,
+      142
+    ]
+  },
+  {
+    "filename": "plate_dc_bus_image_000033_XUH0eV452t_0_GJ01DY6855.jpg",
+    "path": "data\\sample_plates\\plate_dc_bus_image_000033_XUH0eV452t_0_GJ01DY6855.jpg",
+    "ground_truth": "GJ01DY6855",
+    "original_image": "dc_bus_image_000033_XUH0eV452t",
+    "box": [
+      1116,
+      1979,
+      1214,
+      2012
+    ],
+    "dimensions": [
+      108,
+      35
+    ]
+  },
+  {
+    "filename": "plate_dc_bus_image_000039_9NispLHmAo_0_KL498262.jpg",
+    "path": "data\\sample_plates\\plate_dc_bus_image_000039_9NispLHmAo_0_KL498262.jpg",
+    "ground_truth": "KL498262",
+    "original_image": "dc_bus_image_000039_9NispLHmAo",
+    "box": [
+      2437,
+      2475,
+      2745,
+      2576
+    ],
+    "dimensions": [
+      344,
+      113
+    ]
+  },
+  {
+    "filename": "plate_dc_license_plates_0RBAQHKIXQMDFYZD_0_WB42AX7446.jpg",
+    "path": "data\\sample_plates\\plate_dc_license_plates_0RBAQHKIXQMDFYZD_0_WB42AX7446.jpg",
+    "ground_truth": "WB42AX7446",
+    "original_image": "dc_license_plates_0RBAQHKIXQMDFYZD",
+    "box": [
+      848,
+      772,
+      1526,
+      978
+    ],
+    "dimensions": [
+      758,
+      230
+    ]
+  },
+  {
+    "filename": "plate_dc_license_plates_0RRPJCID3RRLSFTI_0_MP07L7524.jpg",
+    "path": "data\\sample_plates\\plate_dc_license_plates_0RRPJCID3RRLSFTI_0_MP07L7524.jpg",
+    "ground_truth": "MP07L7524",
+    "original_image": "dc_license_plates_0RRPJCID3RRLSFTI",
+    "box": [
+      904,
+      1149,
+      1326,
+      1246
+    ],
+    "dimensions": [
+      472,
+      107
+    ]
+  },
+  {
+    "filename": "plate_dc_license_plates_2D9KWCA7PLD0NW31_0_MP04PA0434.jpg",
+    "path": "data\\sample_plates\\plate_dc_license_plates_2D9KWCA7PLD0NW31_0_MP04PA0434.jpg",
+    "ground_truth": "MP04PA0434",
+    "original_image": "dc_license_plates_2D9KWCA7PLD0NW31",
+    "box": [
+      604,
+      1360,
+      2697,
+      1935
+    ],
+    "dimensions": [
+      2343,
+      643
+    ]
+  },
+  {
+    "filename": "plate_dc_license_plates_2DZ4YT4ZJ9XJZSO0_0_RJ11GB1829.jpg",
+    "path": "data\\sample_plates\\plate_dc_license_plates_2DZ4YT4ZJ9XJZSO0_0_RJ11GB1829.jpg",
+    "ground_truth": "RJ11GB1829",
+    "original_image": "dc_license_plates_2DZ4YT4ZJ9XJZSO0",
+    "box": [
+      1487,
+      1144,
+      1647,
+      1229
+    ],
+    "dimensions": [
+      178,
+      95
+    ]
+  },
+  {
+    "filename": "plate_dc_license_plates_3GKHBM5PWHYXHMTE_0_KL41L7001.jpg",
+    "path": "data\\sample_plates\\plate_dc_license_plates_3GKHBM5PWHYXHMTE_0_KL41L7001.jpg",
+    "ground_truth": "KL41L7001",
+    "original_image": "dc_license_plates_3GKHBM5PWHYXHMTE",
+    "box": [
+      870,
+      1548,
+      1376,
+      1685
+    ],
+    "dimensions": [
+      566,
+      153
+    ]
+  },
+  {
+    "filename": "plate_dc_license_plates_3HE1J0YIRGRDENVO_0_TN58D5353.jpg",
+    "path": "data\\sample_plates\\plate_dc_license_plates_3HE1J0YIRGRDENVO_0_TN58D5353.jpg",
+    "ground_truth": "TN58D5353",
+    "original_image": "dc_license_plates_3HE1J0YIRGRDENVO",
+    "box": [
+      1185,
+      1753,
+      2084,
+      2302
+    ],
+    "dimensions": [
+      1005,
+      613
+    ]
+  },
+  {
+    "filename": "plate_dc_license_plates_7K9NEIDD2KK46L6F_0_KL07BX7197.jpg",
+    "path": "data\\sample_plates\\plate_dc_license_plates_7K9NEIDD2KK46L6F_0_KL07BX7197.jpg",
+    "ground_truth": "KL07BX7197",
+    "original_image": "dc_license_plates_7K9NEIDD2KK46L6F",
+    "box": [
+      1365,
+      1767,
+      1822,
+      2019
+    ],
+    "dimensions": [
+      511,
+      282
+    ]
+  },
+  {
+    "filename": "plate_dc_license_plates_7L53OMODJOLUGUOE_0_UP84AE6664.jpg",
+    "path": "data\\sample_plates\\plate_dc_license_plates_7L53OMODJOLUGUOE_0_UP84AE6664.jpg",
+    "ground_truth": "UP84AE6664",
+    "original_image": "dc_license_plates_7L53OMODJOLUGUOE",
+    "box": [
+      423,
+      823,
+      2505,
+      1906
+    ],
+    "dimensions": [
+      2330,
+      1211
+    ]
+  },
+  {
+    "filename": "plate_dc_license_plates_VTPRN3NAPF8MUGNF_0_KL10AG7249.jpg",
+    "path": "data\\sample_plates\\plate_dc_license_plates_VTPRN3NAPF8MUGNF_0_KL10AG7249.jpg",
+    "ground_truth": "KL10AG7249",
+    "original_image": "dc_license_plates_VTPRN3NAPF8MUGNF",
+    "box": [
+      1186,
+      1359,
+      1734,
+      1767
+    ],
+    "dimensions": [
+      612,
+      456
+    ]
+  },
+  {
+    "filename": "plate_dc_license_plates_VYA8KOAVKLW6PJYK_0_TN58AP5280.jpg",
+    "path": "data\\sample_plates\\plate_dc_license_plates_VYA8KOAVKLW6PJYK_0_TN58AP5280.jpg",
+    "ground_truth": "TN58AP5280",
+    "original_image": "dc_license_plates_VYA8KOAVKLW6PJYK",
+    "box": [
+      939,
+      875,
+      1248,
+      1079
+    ],
+    "dimensions": [
+      345,
+      228
+    ]
+  },
+  {
+    "filename": "plate_dc_license_plates_VZUYOAPZ8633ZQTN_0_DL3CD1210.jpg",
+    "path": "data\\sample_plates\\plate_dc_license_plates_VZUYOAPZ8633ZQTN_0_DL3CD1210.jpg",
+    "ground_truth": "DL3CD1210",
+    "original_image": "dc_license_plates_VZUYOAPZ8633ZQTN",
+    "box": [
+      1102,
+      1559,
+      1465,
+      1666
+    ],
+    "dimensions": [
+      405,
+      119
+    ]
+  },
+  {
+    "filename": "plate_dc_license_plates_W1W3000C6IAY3F1X_0_RJ11GB8850.jpg",
+    "path": "data\\sample_plates\\plate_dc_license_plates_W1W3000C6IAY3F1X_0_RJ11GB8850.jpg",
+    "ground_truth": "RJ11GB8850",
+    "original_image": "dc_license_plates_W1W3000C6IAY3F1X",
+    "box": [
+      508,
+      990,
+      1776,
+      1343
+    ],
+    "dimensions": [
+      1420,
+      395
+    ]
+  },
+  {
+    "filename": "plate_dc_tempo_van__image_000489_73h4cMU8Z1_0_MP13GA9462.jpg",
+    "path": "data\\sample_plates\\plate_dc_tempo_van__image_000489_73h4cMU8Z1_0_MP13GA9462.jpg",
+    "ground_truth": "MP13GA9462",
+    "original_image": "dc_tempo_van__image_000489_73h4cMU8Z1",
+    "box": [
+      1099,
+      2402,
+      1500,
+      2585
+    ],
+    "dimensions": [
+      449,
+      203
+    ]
+  },
+  {
+    "filename": "plate_dc_tempo_van__image_000490_CF9bwJsyoX_0_KA09C2763.jpg",
+    "path": "data\\sample_plates\\plate_dc_tempo_van__image_000490_CF9bwJsyoX_0_KA09C2763.jpg",
+    "ground_truth": "KA09C2763",
+    "original_image": "dc_tempo_van__image_000490_CF9bwJsyoX",
+    "box": [
+      1585,
+      2036,
+      1843,
+      2111
+    ],
+    "dimensions": [
+      288,
+      83
+    ]
+  },
+  {
+    "filename": "plate_dc_truck_image_001561_IEhCyPTs_0_MH18AA1002.jpg",
+    "path": "data\\sample_plates\\plate_dc_truck_image_001561_IEhCyPTs_0_MH18AA1002.jpg",
+    "ground_truth": "MH18AA1002",
+    "original_image": "dc_truck_image_001561_IEhCyPTs",
+    "box": [
+      1563,
+      2046,
+      1903,
+      2232
+    ],
+    "dimensions": [
+      380,
+      208
+    ]
+  },
+  {
+    "filename": "plate_dc_truck_image_001564_RZeQ1TZR_0_KA01AJ7533.jpg",
+    "path": "data\\sample_plates\\plate_dc_truck_image_001564_RZeQ1TZR_0_KA01AJ7533.jpg",
+    "ground_truth": "KA01AJ7533",
+    "original_image": "dc_truck_image_001564_RZeQ1TZR",
+    "box": [
+      2094,
+      1824,
+      2477,
+      1963
+    ],
+    "dimensions": [
+      427,
+      155
+    ]
+  }
+]
