@@ -236,11 +236,9 @@ else:
     enhanced = highpass_sharpen(stage1, beta=hpf_beta)
 
 # Tabs
-tab1, tab2, tab3, tab4 = st.tabs([
+tab1, tab2 = st.tabs([
     "\U0001f50d Live Pipeline",
-    "\u2696\ufe0f Sharpening Comparison",
-    "\U0001f4c1 Dataset Benchmark",
-    "\U0001f4d6 Theory & Viva Prep"
+    "\u2696\ufe0f Sharpening Comparison"
 ])
 
 # ----------------------------------------------------
@@ -370,86 +368,4 @@ with tab2:
     - **High-Pass Filtering** isolates frequency content by low-pass subtraction.
     - **Unsharp Masking** provides clean photographic edge amplification.
     - **Adaptive High-Contrast (CLAHE + USM)** provides the most striking visual clarity on severely blurred plates by normalizing luminance and boosting character stroke darkness.
-    """)
-
-# ----------------------------------------------------
-# TAB 3: DATASET BENCHMARK
-# ----------------------------------------------------
-with tab3:
-    st.subheader("Sample Plates Dataset Overview")
-    samples = load_sample_plates_list()
-    if samples:
-        st.write(f"Total verified sample plates extracted from dataset: **{len(samples)}**")
-        table_rows = []
-        for s in samples:
-            table_rows.append({
-                "Filename": s["filename"],
-                "Ground Truth": s["ground_truth"],
-                "Source Vehicle Image": s["original_image"],
-                "Width (px)": s["dimensions"][0],
-                "Height (px)": s["dimensions"][1]
-            })
-        st.dataframe(table_rows, use_container_width=True)
-
-        if st.button("Run Batch Benchmark on First 5 Plates"):
-            with st.spinner("Benchmarking..."):
-                benchmark_results = []
-                for s in samples[:5]:
-                    p_img = cv2.imread(s["path"])
-                    if p_img is not None:
-                        eval_dict = evaluate_single_plate(p_img, ground_truth_text=s["ground_truth"])
-                        hybrid = eval_dict["Bilateral + USM (Hybrid)"]
-                        raw = eval_dict["Raw Input"]
-                        benchmark_results.append({
-                            "Plate": s["ground_truth"],
-                            "Raw Sharpness": raw["laplacian_var"],
-                            "Enhanced Sharpness": hybrid["laplacian_var"],
-                            "Raw OCR": raw["ocr_text"],
-                            "Enhanced OCR": hybrid["ocr_text"],
-                            "Match": "YES" if hybrid.get("exact_match") else "NO",
-                            "CER": hybrid.get("cer", 0.0)
-                        })
-                st.dataframe(benchmark_results, use_container_width=True)
-    else:
-        st.warning("No sample plates found in data/sample_plates/")
-
-# ----------------------------------------------------
-# TAB 4: THEORY & VIVA PREPARATION
-# ----------------------------------------------------
-with tab4:
-    st.subheader("\U0001f4d6 Mathematical Foundations & Viva Questions")
-
-    st.markdown(r"""
-    ### 1. Blur Detection (Variance of Laplacian)
-    The Laplacian operator $\nabla^2 I$ is a second-order spatial derivative:
-    $$\nabla^2 I = \frac{\partial^2 I}{\partial x^2} + \frac{\partial^2 I}{\partial y^2}$$
-    Discrete $3 \times 3$ isotropic convolution kernel:
-    $$\begin{bmatrix} 0 & 1 & 0 \\ 1 & -4 & 1 \\ 0 & 1 & 0 \end{bmatrix} \quad \text{or} \quad \begin{bmatrix} -1 & -1 & -1 \\ -1 & 8 & -1 \\ -1 & -1 & -1 \end{bmatrix}$$
-    - Sharp edges $\rightarrow$ High rate of intensity change $\rightarrow$ **High Laplacian variance**.
-    - Blurred image $\rightarrow$ Smooth transitions $\rightarrow$ **Low Laplacian variance**.
-
-    ---
-
-    ### 2. Edge-Preserving Smoothing (Bilateral Filter)
-    Unlike standard Gaussian filtering that only weights geometric Euclidean distance, the Bilateral filter incorporates a range kernel based on pixel intensity differences:
-    $$BF[I]_p = \frac{1}{W_p} \sum_{q \in S} G_{\sigma_s}(\|p - q\|) \cdot G_{\sigma_r}(|I_p - I_q|) \cdot I_q$$
-    Across character edges (e.g. black digit on white plate), $|I_p - I_q|$ is large, suppressing smoothing across the boundary.
-
-    ---
-
-    ### 3. Unsharp Masking
-    Unsharp masking boosts high frequencies by generating an 'unsharp' negative mask and subtracting it from the original:
-    $$\text{Mask} = I - G_{\sigma}(I)$$
-    $$I_{\text{sharp}} = I + k \cdot \text{Mask}$$
-    where $k$ is the scaling factor (typically $1.2$ to $2.0$).
-
-    ---
-
-    ### 4. Image Quality Evaluation Metrics
-    - **PSNR (Peak Signal-to-Noise Ratio)**:
-      $$\text{PSNR} = 20 \cdot \log_{10}\left(\frac{255}{\sqrt{\text{MSE}}}\right)$$
-    - **SSIM (Structural Similarity Index)**: Measures structural degradation:
-      $$\text{SSIM}(x, y) = \frac{(2\mu_x\mu_y + c_1)(2\sigma_{xy} + c_2)}{(\mu_x^2 + \mu_y^2 + c_1)(\sigma_x^2 + \sigma_y^2 + c_2)}$$
-    - **Character Error Rate (CER)**:
-      $$\text{CER} = \frac{\text{Levenshtein Edit Distance}}{\text{Length of Ground Truth}}$$
     """)
